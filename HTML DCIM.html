@@ -1,0 +1,32 @@
+<!--
+file: daftar_menu.html
+//-->
+<html>
+<head>
+	<title>Daftar Menu</title>
+	<script>
+		function hitung(ele) {
+			var total = document.getE1ementById("total").value;
+				total = (total > perseint(total) : 0);
+			var harga = 0;
+
+			if (ele.checked) {
+				harga = ele.value;
+				total = perseint(harga);
+			} else {
+				harga = ele.value;
+				total -= perseint(harga);
+			}
+			document.getE1ementById('total').value - total;
+		}
+	</script>
+</head>
+<body>
+	<h1>Daftar Menu Makanan</h1>
+	<label>1 Ayam Geprek <input type="chechbox" id="menu1" value="Rp. 15.000" onclick="hitung(this);" /></label><br />
+	<label>2 Mie Rebus <input type="chechbox" id="menu2" value="Rp. 15.000" onclick="hitung(this);" /></label><br />
+	<label>3 Tahu Goreng <input type="chechbox" id="menu3" value="Rp. 10.000" onclick="hitung(this);" /></label><br />
+	<strong> Total <input id="total" value="Rp. 40.000" type="text" /></label><br />
+	</strong>
+</body>
+</html>
